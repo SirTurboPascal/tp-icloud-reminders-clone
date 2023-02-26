@@ -1,13 +1,23 @@
-import { FC } from 'react';
+import { FC, useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-import {} from 'components/data-display';
-import { Page } from 'components/surfaces';
-import Typography from 'components/data-display/Typography/Typography';
+import { Logo, Typography } from 'components/data-display';
+import { Header, Page } from 'components/surfaces';
 
 const HomePage: FC = () => {
+	const navigate = useNavigate();
+
+	const logoCallback = useCallback(() => {
+		navigate('/');
+	}, [navigate]);
+
 	return (
 		<Page title='Home'>
-			<Typography>Hello World!</Typography>
+			<Header>
+				<Logo onClick={logoCallback} />
+
+				<Typography variant='header'>Reminders Clone</Typography>
+			</Header>
 		</Page>
 	);
 };

@@ -8,12 +8,12 @@ const StyledPage = styled.div`
 	height: 100vh;
 
 	background-color: #ffffff;
-	color: #000000;
+	color: #272727;
 	overflow: hidden;
 
 	@media (prefers-color-scheme: dark) {
-		background-color: #000000;
-		color: #ffffff;
+		background-color: #2d221e;
+		color: #dfdddd;
 	}
 `;
 

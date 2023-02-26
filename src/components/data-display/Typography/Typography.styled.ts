@@ -7,6 +7,15 @@ const StyledTypography = styled.div`
 		font-size: 1.1875rem;
 		font-weight: 500;
 	}
+
+	&.header,
+	&.logo {
+		font-weight: 600;
+	}
+
+	&.header {
+		font-size: 1.3125rem;
+	}
 `;
 
 export default StyledTypography;
